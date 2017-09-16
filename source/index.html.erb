@@ -9,11 +9,17 @@ title: Tommy Lee
 <ul>
   <% data.movies.items.each_with_index do |item, index| %>
   <li>
-    <%= link_to(
+    <% if item.link.empty? %>
+      <%= item.title %>
+      |
+      <%= item.role %>
+    <% else %>
+      <%= link_to(
           item.title,
           item.link) %>
-         |
-        <%= item.role %>
+      |
+      <%= item.role %>
+    <% end %>
     <% if index == 0 or index == 3 %>
       </li>
       </ul>
