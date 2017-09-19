@@ -1,0 +1,96 @@
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: $base-spacing;
+}
+
+section.hero-display {
+  @include grid-column(12);
+
+  figure {
+    header {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+}
+
+section.white-section {
+  @include grid-container;
+
+  h1.date {
+    font-weight: bold;
+    float: right;
+  }
+
+  article {
+    @include grid-column(12);
+
+    section.white-section__text {
+      text-align: right;
+      @include grid-column(6 of 12);
+    }
+
+    figure {
+      @include grid-column(6 of 12);
+    }
+  }
+}
+
+section.black-section {
+  @include grid-container;
+  background-color: darkgrey;
+
+  h1.date {
+    font-weight: bold;
+  }
+
+  article {
+    @include grid-column(12);
+
+    section.black-section__text {
+      text-align: left;
+      @include grid-column(6);
+    }
+
+    figure {
+      @include grid-column(6);
+
+      img {
+        float: right;
+      }
+    }
+  }
+}
+
+footer {
+  @include grid-container;
+  background-color: darkgrey;
+
+  section.footer-links {
+    @include grid-column(12);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.footer-contact {
+    @include grid-column(6);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.footer-social {
+    @include grid-column(6);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
