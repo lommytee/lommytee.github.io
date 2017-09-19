@@ -2,32 +2,90 @@
 title: Tommy Lee
 ---
 
-<h1>TOMMY LEE</h1>
+<nav>
+  <%= link_to 'Work', 'index' %>
+  <%= link_to 'About', 'about' %>
+</nav>
 
-</hr>
+<section class="hero-display">
+  <figure>
+    <%= image_tag 'tommy-lee.gif' %>
+    <header>Tommy Lee</header>
+  </figure>
+</section>
 
-<ul>
-  <% data.movies.items.each_with_index do |item, index| %>
-  <li>
-    <% if item.link.empty? %>
-      <%= item.title %>
-      |
-      <%= item.role %>
-    <% else %>
-      <%= link_to(
-          item.title,
-          item.link) %>
-      |
-      <%= item.role %>
-    <% end %>
-    <% if index == 0 or index == 3 %>
-      </li>
-      </ul>
-      <ul>
-    <% end %>
-  </li>
-  <% end %>
-</ul>
+<section class="white-section">
+  <h1 class="date">2017</h1>
+  <article>
+    <section class="white-section__text">
+      <header>Milk Chug</header>
+      <p>Wrote/Directed</p>
+    </section>
 
-<hr>
-<p>Full site coming soon.</p>
+    <figure>
+      <%= image_tag 'milk-chug.jpg' %>
+    </figure>
+  </article>
+
+</section>
+
+<section class="black-section">
+  <h1 class="date">2016</h1>
+  <article>
+    <figure>
+      <%= image_tag 'show-me-the-ropes.jpg' %>
+    </figure>
+
+    <section class="black-section__text">
+      <header>Show Me The Ropes</header>
+      <p>Wrote/Directed</p>
+    </section>
+  </article>
+</section>
+
+<section class="white-section">
+  <h1 class="date">2015</h1>
+  <article>
+    <section class="white-section__text">
+      <header>As I Am</header>
+      <p>Wrote/Directed</p>
+    </section>
+
+    <figure>
+      <%= image_tag 'as-i-am.jpg' %>
+    </figure>
+  </article>
+</section>
+
+
+<section class="black-section">
+  <h1 class="date">2014</h1>
+  <article>
+    <figure>
+      <%= image_tag 'skipping-stones.jpg' %>
+    </figure>
+
+    <section class="black-section__text">
+      <header>Skipping Stones</header>
+      <p>Wrote/Directed</p>
+    </section>
+  </article>
+</section>
+
+<section class="white-section">
+  <h1 class="date">2013</h1>
+  <article>
+    <section class="white-section__text">
+      <header>Renimbi Tips</header>
+      <p>Wrote/Directed</p>
+    </section>
+
+    <figure class="figure-award">
+      <%= image_tag 'reward.png' %>
+      <%= image_tag 'renimbi-tips.jpg' %>
+    </figure>
+  </article>
+</section>
+
+
+<%= partial 'footer' %>
