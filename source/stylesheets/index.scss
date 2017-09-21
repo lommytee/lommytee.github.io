@@ -1,29 +1,110 @@
+$section-padding: $base-spacing;
+
+@function fact($number) {
+  $value: 1;
+  @if $number > 0 {
+    @for $i from 1 through $number {
+      $value: $value * $i;
+    }
+  }
+  @return $value;
+}
+
+@function pow($number, $exp) {
+  $value: 1;
+  @if $exp > 0 {
+    @for $i from 1 through $exp {
+      $value: $value * $number;
+    }
+  }
+  @else if $exp < 0 {
+    @for $i from 1 through -$exp {
+      $value: $value / $number;
+    }
+  }
+  @return $value;
+}
+
+@function pi() {
+  @return 3.14159265359;
+}
+
+@function rad($angle) {
+  $unit: unit($angle);
+  $unitless: $angle / ($angle * 0 + 1);
+  // If the angle has 'deg' as unit, convert to radians.
+  @if $unit == deg {
+    $unitless: $unitless / 180 * pi();
+  }
+  @return $unitless;
+}
+
+@function sin($angle) {
+  $sin: 0;
+  $angle: rad($angle);
+  // Iterate a bunch of times.
+  @for $i from 0 through 10 {
+    $sin: $sin + pow(-1, $i) * pow($angle, (2 * $i + 1)) / fact(2 * $i + 1);
+  }
+  @return $sin;
+}
 
 nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: $base-spacing;
+  position: absolute;
+  color: white;
+  z-index: 99999;
 }
 
 section.hero-display {
-  @include grid-column(12);
+  @include grid-container;
+  min-height: 100vh;
+  position: relative;
+  display: block;
 
   figure {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: none;
+    background-color: transparent;
+
+    img {
+      position: absolute;
+      z-index: 999;
+      max-width: 999%;
+      min-width: 100vw;
+      height: 100vh;
+    }
+
     header {
       text-align: center;
-      font-size: 2em;
+      font-size: 4em;
+      color: white;
       font-weight: bold;
+      z-index: 9999;
     }
   }
 }
 
 section.white-section {
   @include grid-container;
+  position: relative;
+  padding: (sin(0.0698132) * 980px) $section-padding;
 
   h1.date {
     font-weight: bold;
     float: right;
+    margin-top: $base-spacing;
+    position: absolute;
+    top: (sin(-0.0698132) * 980px);
+    right: $base-spacing;
+    z-index: 9999;
   }
 
   article {
@@ -38,14 +119,60 @@ section.white-section {
       @include grid-column(6 of 12);
     }
   }
+
+  &:before {
+    content: "";
+    background: white;
+    height: (sin(-0.0698132) * -980px) * 1.5;
+    transform: skewY(-4deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-right: -100vw;
+    margin-left: -100vw;
+    top: (sin(-0.0698132) * 980px);
+  }
+
 }
+
+section.first-white-section {
+  padding: (sin(0.0698132) * 100vw) $section-padding;
+
+  &:before {
+    content: "";
+    background: white;
+    height: calc(#{sin(-0.0698132)} * -100vw * 2);
+    transform: skewY(-4deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-right: -100vw;
+    margin-left: -100vw;
+    top: (sin(-0.0698132) * 100vw);
+  }
+}
+
+
 
 section.black-section {
   @include grid-container;
-  background-color: darkgrey;
+  background-color: #181818;
+  position: relative;
+  padding: ((sin(0.0698132) * 980px) * 2) $section-padding;
+  margin-bottom: $base-spacing;
+  overflow: hidden;
+  color: white;
 
   h1.date {
     font-weight: bold;
+    float: right;
+    margin-top: $base-spacing;
+    position: absolute;
+    top: (sin(-0.0698132) * -980px / 2);
+    left: $base-spacing;
+    z-index: 9999;
   }
 
   article {
@@ -64,11 +191,26 @@ section.black-section {
       }
     }
   }
+
+  &:before {
+    content: "";
+    background: orange;
+    height: sin(-0.0698132) * -980px;
+    transform: skewY(4deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-right: -100vw;
+    margin-left: -100vw;
+    top: (sin(-0.0698132) * -980px) / -2;
+  }
+
 }
 
 footer {
   @include grid-container;
-  background-color: darkgrey;
+  background-color: #181818;
 
   section.footer-links {
     @include grid-column(12);
