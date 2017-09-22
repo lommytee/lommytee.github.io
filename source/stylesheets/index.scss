@@ -87,7 +87,7 @@ section.hero-display {
     height: $hero-view-height;
     background-color: transparent;
 
-    img {
+    video {
       position: absolute;
       z-index: 999;
       max-width: 999%;
@@ -102,6 +102,7 @@ section.hero-display {
       font-weight: bold;
       z-index: 9999;
       text-transform: uppercase;
+      margin-bottom: $hero-view-height - 100vh;
     }
   }
 }
