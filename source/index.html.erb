@@ -3,7 +3,7 @@ title: Tommy Lee
 ---
 
 <nav>
-  <%= link_to 'Work', 'index' %>
+  <%= link_to 'Work', 'index', class: 'active' %>
   <%= link_to 'About', 'about' %>
 </nav>
 
@@ -72,7 +72,7 @@ title: Tommy Lee
   </article>
 </section>
 
-<section class="white-section">
+<section class="white-section last-section">
   <h1 class="date">2013</h1>
   <article>
     <section class="white-section__text">
@@ -81,11 +81,10 @@ title: Tommy Lee
     </section>
 
     <figure class="figure-award">
-      <%= image_tag 'award.png' %>
       <%= image_tag 'renmimbi.png' %>
     </figure>
   </article>
 </section>
 
 
-<%= partial 'footer' %>
+
