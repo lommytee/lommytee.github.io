@@ -1,0 +1,87 @@
+div.about-container {
+  background-color: #181818;
+  display: block;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+section.hero-image {
+  margin-top: $base-spacing * 3;
+  @include grid-column(12);
+  background-color: #181818;
+  position: relative;
+  z-index: 1;
+  margin-bottom: $base-spacing * 3;
+
+  figure {
+    float: right;
+    @include grid-column(12);
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    border-left: 10px solid orange;
+    padding-left: $base-spacing;
+
+    img {
+      width: 100%;
+      z-index: 1;
+      position: absolute;
+      top: -5em;
+    }
+
+  }
+
+  p {
+    color: white;
+    z-index: 999999;
+    position: absolute;
+    bottom: 0;
+    right: $small-spacing;
+    font-size: 2em;
+
+    span {
+      color: orange;
+    }
+  }
+
+
+  &:after{
+    content: "";
+    background: #181818;
+    height: calc(#{sin(-$angle-degree)} * -100vw);
+    transform: skewY(-$angle-degree);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin-right: -100vw;
+    margin-left: -100vw;
+    bottom: (sin(-$angle-degree) * 45vw);
+  }
+}
+
+section.about-section {
+  @include grid-column(12);
+  position: relative;
+  z-index: 3;
+
+  section.bio {
+    @include grid-column(11);
+    color: white;
+    z-index: 99999;
+    h1 {
+      font-weight: 800;
+      text-transform: uppercase;
+      color: orange;
+    }
+    p {
+      font-size: 1.5em;
+      text-align: justify;
+    }
+
+    border-right: 10px solid orange;
+    padding-right: $base-spacing;
+  }
+}

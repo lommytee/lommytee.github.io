@@ -2,16 +2,22 @@
 title: Tommy Lee
 ---
 
+<div class="about-container">
+<div class="container">
+
 <nav>
   <%= link_to 'About', 'about', class: 'active' %>
   <%= link_to 'Work', 'index' %>
 </nav>
 
 <section class="hero-image">
+  <div class="orange-divider">
+    <div class="orange-line"></div>
+  </div>
   <figure>
     <%= image_tag 'tommy-lee-headshot.jpg' %>
-    <figcaption>Hi, I'm Tommy Lee</figcaption>
   </figure>
+  <p><span>Hi,</span> I'm Tommy Lee</p>
 </section>
 
 
@@ -31,6 +37,10 @@ title: Tommy Lee
     </p>
   </section>
 
-  <%= partial 'footer' %>
+  <div class="orange-divider">
+    <div class="orange-line"></div>
+  </div>
 </section>
 
+</div>
+</div>
