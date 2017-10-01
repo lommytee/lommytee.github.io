@@ -68,7 +68,7 @@ section.about-section {
   z-index: 3;
 
   section.bio {
-    @include grid-column(11);
+    @include grid-column(12);
     color: white;
     z-index: 99999;
     h1 {
