@@ -10,8 +10,8 @@ title: Tommy Lee
 
 <section class="hero-display">
   <figure>
-    <video preload="auto" autoplay="autoplay" loop="loop">
-      <source src="http://i.imgur.com/1o3GD0l.mp4" type="video/mp4"></source>
+    <video preload="auto" autoplay="autoplay" loop="loop" muted>
+      <source src="https://r1---sn-nx57ynle.googlevideo.com/videoplayback?source=youtube&ip=2600%3A3c01%3A%3Af03c%3A91ff%3Afe24%3Ab564&ratebypass=yes&ipbits=0&signature=073C228B9DCD472E76ED3ADED70C33B72B9EA715.3D0115E9AF6F4DF17C79B41C64C1DE386F1BA33A&pl=22&ei=KTHUWfLyKcvx-QPTi4xw&id=o-ACpdIo-nGtc_Fxoq4CjlDPJtu5u2GeRQ4CpqRh9gPxPn&dur=219.683&mime=video%2Fmp4&lmt=1471757595096658&itag=22&requiressl=yes&sparams=dur,ei,expire,id,initcwndbps,ip,ipbits,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&key=cms1&expire=1507100041&mip=50.68.168.227&redirect_counter=1&cm2rm=sn-ni5f-t8ge76&fexp=9462443&req_id=b87d7171a3daa3ee&cms_redirect=yes&mm=30&mn=sn-nx57ynle&ms=nxu&mt=1507078337&mv=m" type="video/mp4"></source>
     </video>
     <header>Tommy Lee</header>
   </figure>
@@ -22,7 +22,7 @@ title: Tommy Lee
   <article>
     <section class="white-section__text">
       <header>Milk Chug</header>
-      <p>Wrote/Directed</p>
+      <p>Writer // Director</p>
     </section>
 
     <figure>
@@ -36,12 +36,16 @@ title: Tommy Lee
   <h1 class="date">2016</h1>
   <article>
     <figure>
-      <%= image_tag 'ropes.jpg' %>
+      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw') do %>
+        <%= image_tag 'ropes.jpg' %>
+      <% end %>
     </figure>
 
     <section class="black-section__text">
-      <header>Show Me The Ropes</header>
-      <p>Wrote/Directed</p>
+      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw') do %>
+        <header>Show Me The Ropes</header>
+      <% end %>
+      <p>Writer // Director // Producer</p>
     </section>
   </article>
 </section>
@@ -51,7 +55,7 @@ title: Tommy Lee
   <article>
     <section class="white-section__text">
       <header>As I Am</header>
-      <p>Wrote/Directed</p>
+      <p>Director</p>
     </section>
 
     <figure>
@@ -65,12 +69,16 @@ title: Tommy Lee
   <h1 class="date">2014</h1>
   <article>
     <figure>
-      <%= image_tag 'skipping-stone.jpg' %>
+      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo') do %>
+        <%= image_tag 'skipping-stone.jpg' %>
+      <% end %>
     </figure>
 
     <section class="black-section__text">
-      <header>Skipping Stones</header>
-      <p>Wrote/Directed</p>
+      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo') do %>
+        <header>Skipping Stones</header>
+      <% end %>
+      <small>Co-Writer // Director // Editor // Producer</small>
     </section>
   </article>
 </section>
@@ -79,12 +87,16 @@ title: Tommy Lee
   <h1 class="date">2013</h1>
   <article>
     <section class="white-section__text">
-      <header>Renmimbi Tips</header>
-      <p>Wrote/Directed</p>
+      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c') do %>
+        <header>Renmimbi Tips</header>
+      <% end %>
+      <p>Writer // Director</p>
     </section>
 
     <figure class="figure-award">
-      <%= image_tag 'renmimbi.png' %>
+      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c') do %>
+        <%= image_tag 'renmimbi.png' %>
+      <% end %>
     </figure>
   </article>
 </section>

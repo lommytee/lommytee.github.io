@@ -66,6 +66,10 @@ nav {
     color: white;
     font-weight: bold;
     text-decoration: none;
+    font-size: 1.5em;
+    text-shadow:
+    0 1px 3px darken(rgba(black, 0.6),18%),
+    0 1px 2px darken(rgba(black, 0.8),25%);
     margin-right: $base-spacing * 2;
   }
 
@@ -105,6 +109,9 @@ section.hero-display {
       z-index: 9999;
       text-transform: uppercase;
       margin-bottom: $hero-view-height - 100vh;
+      text-shadow:
+      0 1px 3px darken(rgba(black, 0.4),18%),
+      0 1px 2px darken(rgba(black, 0.6),25%);
     }
   }
 }
@@ -128,15 +135,19 @@ section.first-white-section {
 
 
   article {
+    @include grid-container;
+    z-index: 99999;
     min-height: 230px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     margin: ($base-spacing * 2) auto;
 
     figure {
+      z-index: 999999;
       overflow: hidden;
+
       img {
         max-width: 9999%;
         height: 200px;
@@ -150,6 +161,12 @@ section.first-white-section {
       align-items: center;
       justify-content: center;
       font-size: 1.5em;
+      z-index: 999999;
+
+      a {
+        text-decoration: none;
+      }
+
 
       header {
         text-transform: uppercase;
@@ -160,15 +177,30 @@ section.first-white-section {
     }
   }
 
-  &:after {
-    content: '';
-    position: absolute;
-    background-color: red;
-    height: (sin($angle-degree) * 980px) + 230px;
-    width: 10px;
-    z-index: 999;
-    height: 360px * 2;
-    left: 50%;
+
+  @include grid-media($large-grid) {
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: red;
+      height: (sin($angle-degree) * 980px) + 230px;
+      width: 10px;
+      z-index: 999;
+      height: 360px * 2;
+      left: 50%;
+    }
+
+    article {
+      flex-flow: row nowrap;
+      section {
+        @include grid-column(6);
+      }
+
+      figure {
+        @include grid-column(6);
+      }
+    }
   }
 }
 
@@ -194,21 +226,16 @@ section.white-section {
     @include grid-column(12);
     padding-bottom: $section-padding;
 
-    section.white-section__text {
-      text-align: right;
-      @include grid-column(6 of 12);
-    }
-
     figure {
-      @include grid-column(6 of 12);
       margin-left: 0;
       margin-right: 0;
     }
   }
 
-  &:after {
-    background-color: orange;
-    top: -(sin($angle-degree) * 980px);
+  section {
+    a {
+      color: #181818;
+    }
   }
 
   &:before {
@@ -225,6 +252,16 @@ section.white-section {
     top: (sin(-$angle-degree) * 980px);
   }
 
+  @include grid-media($large-grid) {
+    .white-section__text {
+      text-align: right;
+    }
+
+    &:after {
+      background-color: orange;
+      top: -(sin($angle-degree) * 980px);
+    }
+  }
 }
 
 section.first-white-section {
@@ -233,24 +270,8 @@ section.first-white-section {
   background-color: white;
 
   h1.date {
-    z-index:99999;
+    top: -$base-spacing;
     right: $base-spacing;
-  }
-
-  article {
-    z-index: 99999;
-    section {
-      z-index: 99999;
-    }
-    figure {
-      z-index: 99999;
-    }
-  }
-
-  &:after {
-    height: 350px;
-    background-color: orange;
-    top: calc(#{$base-spacing} * 2 + 11px);
   }
 
   &:before {
@@ -265,6 +286,18 @@ section.first-white-section {
     margin-right: -100vw;
     margin-left: -100vw;
     top: (sin(-$angle-degree) * 100vw);
+  }
+
+  @include grid-media($large-grid) {
+    &:after {
+      height: 350px;
+      background-color: orange;
+      top: calc(#{$base-spacing} * 2 + 11px);
+    }
+
+    h1.date {
+      top: -$base-spacing * 3;
+    }
   }
 }
 
@@ -292,26 +325,10 @@ section.black-section {
     }
   }
 
-  article {
-    @include grid-column(12);
-
-    section.black-section__text {
-      text-align: left;
-      @include grid-column(6);
+  section {
+    a {
+      color: white;
     }
-
-    figure {
-      @include grid-column(6);
-
-      img {
-        float: right;
-      }
-    }
-  }
-
-  &:after {
-    top: 0;
-    background-color: white;
   }
 
   &:before {
@@ -328,6 +345,24 @@ section.black-section {
     top: (sin(-$angle-degree) * -980px) / -2;
   }
 
+  @include grid-media($large-grid) {
+    article {
+      section.black-section__text {
+        text-align: left;
+      }
+
+      figure {
+        img {
+          float: right;
+        }
+      }
+    }
+
+    &:after {
+      top: 0;
+      background-color: white;
+    }
+  }
 }
 
 section.last-section {
@@ -360,15 +395,8 @@ footer {
   }
 
   section.footer-contact {
-    @include grid-column(6);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  section.footer-social {
-    @include grid-column(6);
+    margin-top: $base-spacing * 2;
+    @include grid-column(12);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
