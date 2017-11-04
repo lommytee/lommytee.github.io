@@ -11,94 +11,83 @@ title: Tommy Lee
 <section class="hero-display">
   <figure>
     <video preload="auto" autoplay="autoplay" loop="loop" muted>
-      <source src="https://r1---sn-nx57ynle.googlevideo.com/videoplayback?source=youtube&ip=2600%3A3c01%3A%3Af03c%3A91ff%3Afe24%3Ab564&ratebypass=yes&ipbits=0&signature=073C228B9DCD472E76ED3ADED70C33B72B9EA715.3D0115E9AF6F4DF17C79B41C64C1DE386F1BA33A&pl=22&ei=KTHUWfLyKcvx-QPTi4xw&id=o-ACpdIo-nGtc_Fxoq4CjlDPJtu5u2GeRQ4CpqRh9gPxPn&dur=219.683&mime=video%2Fmp4&lmt=1471757595096658&itag=22&requiressl=yes&sparams=dur,ei,expire,id,initcwndbps,ip,ipbits,itag,lmt,mime,mip,mm,mn,ms,mv,pl,ratebypass,requiressl,source&key=cms1&expire=1507100041&mip=50.68.168.227&redirect_counter=1&cm2rm=sn-ni5f-t8ge76&fexp=9462443&req_id=b87d7171a3daa3ee&cms_redirect=yes&mm=30&mn=sn-nx57ynle&ms=nxu&mt=1507078337&mv=m" type="video/mp4"></source>
+      <source src="https://r5---sn-o097znee.googlevideo.com/videoplayback?mt=1509823542&mv=m&pl=62&ipbits=0&ratebypass=yes&ms=au&expire=1509845258&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&initcwndbps=156250&mm=31&mn=sn-o097znee&ei=qhT-WbyDCdCt-QOrp7LoDw&id=o-AENWkYWAZo-QzHdek1AS8IL7hKe_jenSJUVIBL-3uJwj&mime=video%2Fmp4&source=youtube&dur=71.587&ip=2600%3A3c01%3A%3Af03c%3A91ff%3Afe24%3Ab564&key=yt6&itag=22&lmt=1508195510244991&beids=%5B9466593%5D&requiressl=yes&signature=B7CCC85B8E1631686DFAA4ECB8CF796C0A3DBC20.1EAA866FDB8834A479C7AD3B3CDE3EDA1CCD3029" type="video/mp4"></source>
     </video>
-    <header>Tommy Lee</header>
+    <header>
+      Tommy Lee  </br>
+      <small>Writer // Director</small>
+    </header>
   </figure>
 </section>
 
 <section class="white-section first-white-section">
-  <h1 class="date">2017</h1>
-  <article>
-    <section class="white-section__text">
-      <header>Milk Chug</header>
-      <p>Writer // Director</p>
-    </section>
-
-    <figure>
-      <%= image_tag 'milk-chug.jpg' %>
-    </figure>
-  </article>
-
-</section>
-
-<section class="black-section">
   <h1 class="date">2016</h1>
   <article>
-    <figure>
-      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw') do %>
-        <%= image_tag 'ropes.jpg' %>
-      <% end %>
-    </figure>
-
-    <section class="black-section__text">
-      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw') do %>
+    <section class="white-section__text">
+      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
         <header>Show Me The Ropes</header>
       <% end %>
       <p>Writer // Director // Producer</p>
+    </section>
+
+    <figure>
+      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
+        <%= image_tag 'ropes.jpg' %>
+      <% end %>
+    </figure>
+  </article>
+</section>
+
+<section class="black-section">
+  <h1 class="date">2015</h1>
+  <article>
+    <figure>
+      <%= image_tag 'as-i-am.jpg' %>
+    </figure>
+
+    <section class="black-section__text">
+      <header>As I Am</header>
+      <p>Director</p>
     </section>
   </article>
 </section>
 
 <section class="white-section">
-  <h1 class="date">2015</h1>
+  <h1 class="date">2014</h1>
   <article>
     <section class="white-section__text">
-      <header>As I Am</header>
-      <p>Director</p>
+      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
+        <header>Skipping Stone</header>
+      <% end %>
+      <small>Co-writer, Director and Editor // Producer</small>
     </section>
 
     <figure>
-      <%= image_tag 'as-i-am.jpg' %>
+      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
+        <%= image_tag 'skipping-stone.jpg' %>
+      <% end %>
     </figure>
   </article>
 </section>
 
 
-<section class="black-section">
-  <h1 class="date">2014</h1>
+<section class="black-section last-black-section">
+  <h1 class="date">2013</h1>
   <article>
-    <figure>
-      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo') do %>
-        <%= image_tag 'skipping-stone.jpg' %>
+    <figure class="figure-award">
+      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c', target: '_blank') do %>
+        <%= image_tag 'renmimbi.png' %>
       <% end %>
     </figure>
 
     <section class="black-section__text">
-      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo') do %>
-        <header>Skipping Stones</header>
-      <% end %>
-      <small>Co-Writer // Director // Editor // Producer</small>
-    </section>
-  </article>
-</section>
-
-<section class="white-section last-section">
-  <h1 class="date">2013</h1>
-  <article>
-    <section class="white-section__text">
-      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c') do %>
+      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c', target: '_blank') do %>
         <header>Renmimbi Tips</header>
       <% end %>
       <p>Writer // Director</p>
     </section>
-
-    <figure class="figure-award">
-      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c') do %>
-        <%= image_tag 'renmimbi.png' %>
-      <% end %>
-    </figure>
   </article>
 </section>
-
 </div>
+
+<%= partial 'footer-white' %>

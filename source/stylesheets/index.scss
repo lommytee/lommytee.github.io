@@ -51,6 +51,7 @@ $hero-view-height: 125vh;
   @return $sin;
 }
 
+
 nav {
   display: flex;
   flex-flow: row nowrap;
@@ -112,7 +113,15 @@ section.hero-display {
       text-shadow:
       0 1px 3px darken(rgba(black, 0.4),18%),
       0 1px 2px darken(rgba(black, 0.6),25%);
+      line-height: 0.88;
+
+      small {
+        color: white;
+        z-index: 9999;
+        font-size: 0.33em;
+      }
     }
+
   }
 }
 
@@ -177,6 +186,30 @@ section.first-white-section {
     }
   }
 
+  div.awards {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 50%;
+
+    div.award {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .left-leaf, .right-leaf {
+        max-width: 24px;
+        margin-left: $small-spacing / 2;
+        margin-right: $small-spacing / 2;
+        max-height: 48px;
+      }
+
+      p {
+        font-size: 0.5em;
+      }
+    }
+  }
 
   @include grid-media($large-grid) {
 
@@ -255,12 +288,24 @@ section.white-section {
   @include grid-media($large-grid) {
     .white-section__text {
       text-align: right;
+      margin-left: -1em;
+      margin-right: 1.85em;
+      small {
+        font-size: 0.75em;
+      }
     }
 
     &:after {
       background-color: orange;
       top: -(sin($angle-degree) * 980px);
     }
+  }
+}
+
+section.last-black-section {
+
+  &:after {
+    height: 100%;
   }
 }
 
@@ -331,6 +376,11 @@ section.black-section {
     }
   }
 
+  article {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   &:before {
     content: "";
     background: orange;
@@ -365,15 +415,6 @@ section.black-section {
   }
 }
 
-section.last-section {
-  padding: 0;
-
-  &:after {
-    height: 380px;
-    top: -(sin($angle-degree) * 980px);
-  }
-}
-
 footer {
   @include grid-container;
   @include grid-column(12);
@@ -401,5 +442,23 @@ footer {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+
+    ul {
+      li {
+        strong {
+          margin-right: 0.5em;
+        }
+      }
+    }
   }
+}
+
+footer.white {
+  color: black !important;
+  background-color: white;
+
+  a {
+    color: black !important;
+  }
+
 }
