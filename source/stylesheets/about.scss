@@ -47,19 +47,20 @@ section.hero-image {
     }
   }
 
-
-  &:after{
-    content: "";
-    background: #181818;
-    height: calc(#{sin(-$angle-degree)} * -100vw);
-    transform: skewY(-$angle-degree);
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    margin-right: -100vw;
-    margin-left: -100vw;
-    bottom: (sin(-$angle-degree) * 45vw);
+  @include grid-media($large-grid) {
+    &:after{
+      content: "";
+      background: #181818;
+      height: calc(#{sin(-$angle-degree)} * -100vw);
+      transform: skewY(-$angle-degree);
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      margin-right: -100vw;
+      margin-left: -100vw;
+      bottom: (sin(-$angle-degree) * 45vw);
+    }
   }
 }
 
