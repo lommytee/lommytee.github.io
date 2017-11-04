@@ -134,7 +134,8 @@ body {
 body {
   margin: 0;
   background-color: white;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 100%; }
 
 div.about-container {
   overflow-x: hidden; }
@@ -237,22 +238,26 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1.5em;
-  margin-bottom: 0;
+  margin: 0;
   position: absolute;
   color: white;
   z-index: 99999;
   max-width: 980px;
   width: 100%; }
   nav a {
+    margin: 0.75em;
     color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.5em;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.8);
-    margin-right: 3em; }
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.8); }
   nav a.active {
     border-bottom: 3px solid orange; }
+  @media only screen and (min-width: 700px) {
+    nav {
+      margin: 1.5em; }
+      nav a {
+        margin-right: 3em; } }
 
 section.hero-display {
   min-height: 125vh;
@@ -582,9 +587,6 @@ section.black-section {
       background-color: white; } }
 
 footer {
-  width: calc(100% - 40px);
-  float: left;
-  margin-left: 20px;
   margin-left: -20px;
   margin-right: -20px;
   width: calc(100% + 40px);
@@ -662,27 +664,36 @@ section.hero-image {
     width: calc(100% - 40px);
     float: left;
     margin-left: 20px;
-    height: 400px;
     overflow: hidden;
     position: relative;
     z-index: 1;
-    border-left: 10px solid orange;
-    padding-left: 1.5em; }
+    margin-bottom: 1em; }
     section.hero-image figure img {
       width: 100%;
       z-index: 1;
-      position: absolute;
-      top: -10em; }
+      position: relative;
+      display: block; }
   section.hero-image p {
     color: white;
     z-index: 999999;
-    position: absolute;
-    bottom: 0;
-    right: 0.75em;
-    font-size: 2em; }
+    position: relative;
+    font-size: 2em;
+    text-align: center; }
     section.hero-image p span {
       color: orange; }
   @media only screen and (min-width: 700px) {
+    section.hero-image figure {
+      border-left: 10px solid orange;
+      padding-left: 1.5em;
+      height: 400px; }
+      section.hero-image figure img {
+        top: -10em;
+        position: absolute; }
+    section.hero-image p {
+      position: absolute;
+      bottom: 0;
+      right: 0.75em;
+      text-align: right; }
     section.hero-image:after {
       content: "";
       background: #181818;
@@ -708,15 +719,19 @@ section.about-section {
     float: left;
     margin-left: 20px;
     color: white;
-    z-index: 99999;
-    border-right: 10px solid orange;
-    padding-right: 1.5em; }
+    z-index: 99999; }
     section.about-section section.bio h1 {
       font-weight: 800;
       text-transform: uppercase;
       color: orange; }
     section.about-section section.bio p {
-      font-size: 1.5em; }
+      line-height: 2; }
+  @media only screen and (min-width: 700px) {
+    section.about-section section.bio {
+      border-right: 10px solid orange;
+      padding-right: 1.5em; }
+      section.about-section section.bio p {
+        font-size: 1.5em; } }
 
 div.container {
   max-width: 960px;
