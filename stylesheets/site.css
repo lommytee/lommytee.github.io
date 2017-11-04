@@ -136,7 +136,7 @@ body {
   background-color: white;
   overflow-x: hidden; }
 
-div.container {
+div.about-container {
   overflow-x: hidden; }
 
 ul,
@@ -645,7 +645,8 @@ div.about-container {
   background-color: #181818;
   display: block;
   min-height: 100vh;
-  min-width: 100vw; }
+  min-width: 100vw;
+  overflow-x: hidden; }
 
 section.hero-image {
   margin-top: 4.5em;
@@ -681,19 +682,20 @@ section.hero-image {
     font-size: 2em; }
     section.hero-image p span {
       color: orange; }
-  section.hero-image:after {
-    content: "";
-    background: #181818;
-    height: calc(-0.12187 * -100vw);
-    -webkit-transform: skewY(-7deg);
-            transform: skewY(-7deg);
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 2;
-    margin-right: -100vw;
-    margin-left: -100vw;
-    bottom: -5.48412vw; }
+  @media only screen and (min-width: 700px) {
+    section.hero-image:after {
+      content: "";
+      background: #181818;
+      height: calc(-0.12187 * -100vw);
+      -webkit-transform: skewY(-7deg);
+              transform: skewY(-7deg);
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      margin-right: -100vw;
+      margin-left: -100vw;
+      bottom: -5.48412vw; } }
 
 section.about-section {
   width: calc(100% - 40px);
