@@ -643,6 +643,10 @@ footer.white {
   footer.white a {
     color: black !important; }
 
+nav.about-nav {
+  position: relative;
+  margin-bottom: 1.5em; }
+
 div.about-container {
   background-color: #181818;
   display: block;
@@ -651,7 +655,6 @@ div.about-container {
   overflow-x: hidden; }
 
 section.hero-image {
-  margin-top: 4.5em;
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
