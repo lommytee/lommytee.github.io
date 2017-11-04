@@ -56,14 +56,15 @@ nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin: $base-spacing;
-  margin-bottom: 0;
+  margin: 0;
   position: absolute;
   color: white;
   z-index: 99999;
   max-width: 980px;
   width: 100%;
+
   a {
+    margin: $small-spacing;
     color: white;
     font-weight: bold;
     text-decoration: none;
@@ -71,11 +72,18 @@ nav {
     text-shadow:
     0 1px 3px darken(rgba(black, 0.6),18%),
     0 1px 2px darken(rgba(black, 0.8),25%);
-    margin-right: $base-spacing * 2;
   }
 
   a.active {
     border-bottom: 3px solid orange;
+  }
+
+  @include grid-media($large-grid) {
+    margin: $base-spacing;
+
+    a {
+      margin-right: $base-spacing * 2;
+    }
   }
 }
 
@@ -417,7 +425,6 @@ section.black-section {
 
 footer {
   @include grid-container;
-  @include grid-column(12);
   @include grid-collapse;
   background-color: #181818;
   padding: ($base-spacing * 3) $base-spacing;
