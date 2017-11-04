@@ -136,6 +136,9 @@ body {
   background-color: white;
   overflow-x: hidden; }
 
+div.container {
+  overflow-x: hidden; }
+
 ul,
 ol {
   list-style-type: none;
