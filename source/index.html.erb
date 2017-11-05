@@ -22,6 +22,12 @@ title: Tommy Lee
 <section class="white-section first-white-section">
   <h1 class="date">2016</h1>
   <article>
+    <figure class="mobile-figure">
+      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
+        <%= image_tag 'ropes.jpg' %>
+      <% end %>
+    </figure>
+
     <section class="white-section__text">
       <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
         <header>Show Me The Ropes</header>
@@ -29,7 +35,7 @@ title: Tommy Lee
       <p>Writer // Director // Producer</p>
     </section>
 
-    <figure>
+    <figure class="desktop-figure">
       <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
         <%= image_tag 'ropes.jpg' %>
       <% end %>
@@ -40,7 +46,11 @@ title: Tommy Lee
 <section class="black-section">
   <h1 class="date">2015</h1>
   <article>
-    <figure>
+    <figure class="mobile-figure">
+      <%= image_tag 'as-i-am.jpg' %>
+    </figure>
+
+    <figure class="desktop-figure">
       <%= image_tag 'as-i-am.jpg' %>
     </figure>
 
@@ -54,6 +64,12 @@ title: Tommy Lee
 <section class="white-section">
   <h1 class="date">2014</h1>
   <article>
+    <figure class="mobile-figure">
+      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
+        <%= image_tag 'skipping-stone.jpg' %>
+      <% end %>
+    </figure>
+
     <section class="white-section__text">
       <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
         <header>Skipping Stone</header>
@@ -61,7 +77,7 @@ title: Tommy Lee
       <small>Co-writer, Director and Editor // Producer</small>
     </section>
 
-    <figure>
+    <figure class="desktop-figure">
       <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
         <%= image_tag 'skipping-stone.jpg' %>
       <% end %>
@@ -73,7 +89,13 @@ title: Tommy Lee
 <section class="black-section last-black-section">
   <h1 class="date">2013</h1>
   <article>
-    <figure class="figure-award">
+    <figure class="desktop-figure">
+      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c', target: '_blank') do %>
+        <%= image_tag 'renmimbi.png' %>
+      <% end %>
+    </figure>
+
+    <figure class="mobile-figure">
       <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c', target: '_blank') do %>
         <%= image_tag 'renmimbi.png' %>
       <% end %>

@@ -1,3 +1,9 @@
+nav.about-nav {
+  position: relative;
+  margin-bottom: $base-spacing;
+  margin-right: $base-spacing;
+}
+
 div.about-container {
   background-color: #181818;
   display: block;
@@ -7,7 +13,6 @@ div.about-container {
 }
 
 section.hero-image {
-  margin-top: $base-spacing * 3;
   @include grid-column(12);
   background-color: #181818;
   position: relative;

@@ -161,6 +161,14 @@ section.first-white-section {
     align-items: center;
     margin: ($base-spacing * 2) auto;
 
+    figure.mobile-figure {
+      display: block;
+    }
+
+    figure.desktop-figure {
+      display: none;
+    }
+
     figure {
       z-index: 999999;
       overflow: hidden;
@@ -241,6 +249,14 @@ section.first-white-section {
       figure {
         @include grid-column(6);
       }
+
+      figure.mobile-figure {
+        display: none;
+      }
+
+      figure.desktop-figure {
+        display: block;
+      }
     }
   }
 }
@@ -261,6 +277,10 @@ section.white-section {
       display: inline-block;
       margin-right: $small-spacing;
     }
+  }
+
+  .white-section__text {
+    text-align: center;
   }
 
   article {
@@ -385,6 +405,7 @@ section.black-section {
   }
 
   article {
+    @include grid-column(12);
     margin-top: 1em;
     margin-bottom: 1em;
   }
