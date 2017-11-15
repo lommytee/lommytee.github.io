@@ -5,9 +5,9 @@ Error: Undefined variable: "$base-spacing".
 1: $section-padding: $base-spacing;
 2: $angle-degree: 7deg;
 3: $hero-view-height: 125vh;
-4: $background-color: #f7f7f7;
-5: 
-6: @function fact($number) {
+4: 
+5: @function fact($number) {
+6:   $value: 1;
 
 Backtrace:
 /Users/nolantait/lommytee.github.io/source/stylesheets/index.scss:1
@@ -136,4 +136,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$base-spacing\".\A         on line 1 of /Users/nolantait/lommytee.github.io/source/stylesheets/index.scss\A \A 1: $section-padding: $base-spacing;\A 2: $angle-degree: 7deg;\A 3: $hero-view-height: 125vh;\A 4: $background-color: #f7f7f7;\A 5: \A 6: @function fact($number) {"; }
+  content: "Error: Undefined variable: \"$base-spacing\".\A         on line 1 of /Users/nolantait/lommytee.github.io/source/stylesheets/index.scss\A \A 1: $section-padding: $base-spacing;\A 2: $angle-degree: 7deg;\A 3: $hero-view-height: 125vh;\A 4: \A 5: @function fact($number) {\A 6:   $value: 1;"; }
