@@ -172,6 +172,7 @@ section.first-white-section {
     figure {
       z-index: 999999;
       overflow: hidden;
+      position: relative;
 
       img {
         max-width: 9999%;
