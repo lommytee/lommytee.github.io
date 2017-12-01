@@ -498,6 +498,7 @@ section.video-show {
   position: relative;
   padding: (sin($angle-degree) * 100vw) $section-padding;
   padding-bottom: 1em;
+  padding-top: 0;
   margin-bottom: $base-spacing * 3;
   background-color: white;
   display: flex;
@@ -545,7 +546,7 @@ section.video-show {
     section.video-awards {
       flex-flow: row nowrap;
       padding-bottom: 0;
-      bottom: 128px;
+      bottom: 72px;
     }
   }
 }
@@ -555,4 +556,10 @@ section.video-description {
   max-width: 700px;
   display: block;
   margin: 0 auto;
+
+  p {
+    font-size: 1.5em;
+    line-spacing: 2em;
+    font-weight: light;
+  }
 }
