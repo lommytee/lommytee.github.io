@@ -102,7 +102,7 @@ section.hero-display {
     height: $hero-view-height;
     background-color: transparent;
 
-    video {
+    video, img {
       position: absolute;
       z-index: 999;
       max-width: 999%;
@@ -490,4 +490,69 @@ footer.white {
     color: black !important;
   }
 
+}
+
+
+section.video-show {
+  @include grid-container;
+  position: relative;
+  padding: (sin($angle-degree) * 100vw) $section-padding;
+  padding-bottom: 1em;
+  margin-bottom: $base-spacing * 3;
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  section.video-awards {
+    position: relative;
+    z-index: 9999;
+    bottom: 0;
+    padding-bottom: 128px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 256px;
+      padding: $base-spacing;
+    }
+  }
+
+  figure {
+    z-index: 9999;
+    position: relative;
+  }
+
+
+  &:before {
+    content: "";
+    background: white;
+    height: calc(#{sin(-$angle-degree)} * -100vw * 2);
+    transform: skewY(-$angle-degree);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-right: -100vw;
+    margin-left: -100vw;
+    top: (sin(-$angle-degree) * 100vw);
+  }
+
+  @include grid-media($large-grid) {
+    section.video-awards {
+      flex-flow: row nowrap;
+      padding-bottom: 0;
+      bottom: 128px;
+    }
+  }
+}
+
+section.video-description {
+  padding: $base-spacing;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
 }
