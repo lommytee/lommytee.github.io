@@ -284,7 +284,7 @@ section.hero-display {
             align-items: center;
     height: 125vh;
     background-color: transparent; }
-    section.hero-display figure video {
+    section.hero-display figure video, section.hero-display figure img {
       position: absolute;
       z-index: 999;
       max-width: 999%;
@@ -664,6 +664,81 @@ footer.white {
   background-color: white; }
   footer.white a {
     color: black !important; }
+
+section.video-show {
+  position: relative;
+  padding: 12.18693vw 1.5em;
+  padding-bottom: 1em;
+  margin-bottom: 4.5em;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  section.video-show::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section.video-show section.video-awards {
+    position: relative;
+    z-index: 9999;
+    bottom: 0;
+    padding-bottom: 128px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    section.video-show section.video-awards img {
+      max-width: 256px;
+      padding: 1.5em; }
+  section.video-show figure {
+    z-index: 9999;
+    position: relative; }
+  section.video-show:before {
+    content: "";
+    background: white;
+    height: calc(-0.12187 * -100vw * 2);
+    -webkit-transform: skewY(-7deg);
+            transform: skewY(-7deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin-right: -100vw;
+    margin-left: -100vw;
+    top: -12.18693vw; }
+  @media only screen and (min-width: 700px) {
+    section.video-show section.video-awards {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      padding-bottom: 0;
+      bottom: 128px; } }
+
+section.video-description {
+  padding: 1.5em;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto; }
 
 nav.about-nav {
   position: relative;
