@@ -1,29 +1,10 @@
-<section class="hero-display--video">
-  <figure>
-    <%= image_tag 'ropes.jpg' %>
-    <header>
-      Show Me The Ropes <br />
-      <small>Writer // Director // Producer</small>
-    </header>
-  </figure>
-</section>
-
-
-<section class="video-show">
-  <section class="video-awards">
-    <%= image_tag 'ropes-award-1.png' %>
-    <%= image_tag 'ropes-award-2.jpg' %>
-    <%= image_tag 'ropes-award-3.png' %>
-  </section>
-  <figure>
-    <iframe width="704" height="396" src="https://www.youtube.com/embed/Whlr-cST1vw" frameborder="0" allowfullscreen></iframe>
-  </figure>
-  <section class="video-description">
-    <p>
-    Lara is tied up in a corporate lifestyle, distanced from her
-    passion by negative attachments.
-    </p>
-  </section>
-</section>
+<%= partial 'single_page', locals: {
+  image: 'ropes.jpg',
+  title: 'Show Me The Ropes',
+  role: 'Writer // Director // Producer',
+  awards: ['ropes-award-1.png', 'ropes-award-2.jpg', 'ropes-award-3.png'],
+  link: 'https://www.youtube.com/embed/Whlr-cST1vw',
+  description: 'Lara is tied up in a corporate lifestyle, distanced from her passion by negative attachments.'
+} %>
 
 <%= partial 'footer-white' %>

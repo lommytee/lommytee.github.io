@@ -1,0 +1,26 @@
+<section class="hero-display--video">
+  <figure>
+    <%= image_tag image %>
+    <header class="scroll">
+      <%= title %><br />
+      <small><%= role %></small>
+    </header>
+  </figure>
+</section>
+
+
+<section class="video-show">
+  <section class="video-awards">
+    <% awards.each do |award_image| %>
+      <%= image_tag award_image %>
+    <% end %>
+  </section>
+  <figure id="video">
+    <iframe width="704" height="396" src=<%= link %> frameborder="0" allowfullscreen></iframe>
+  </figure>
+  <section class="video-description">
+    <p>
+    <%= description %>
+    </p>
+  </section>
+</section>
