@@ -538,8 +538,8 @@ section.white-section {
       background-color: orange;
       top: -119.43196px; } }
 
-section.last-black-section:after {
-  height: 100%; }
+section.last-section:after {
+  height: 403px; }
 
 section.first-white-section {
   padding: 12.18693vw 1.5em;
@@ -563,7 +563,6 @@ section.first-white-section {
     top: -12.18693vw; }
   @media only screen and (min-width: 700px) {
     section.first-white-section:after {
-      height: 350px;
       background-color: orange;
       top: calc(1.5em * 2 + 11px); }
     section.first-white-section h1.date {
