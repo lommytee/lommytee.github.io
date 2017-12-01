@@ -339,10 +339,10 @@ section.white-section {
   }
 }
 
-section.last-black-section {
+section.last-section {
 
   &:after {
-    height: 100%;
+    height: 403px;
   }
 }
 
@@ -372,7 +372,6 @@ section.first-white-section {
 
   @include grid-media($large-grid) {
     &:after {
-      height: 350px;
       background-color: orange;
       top: calc(#{$base-spacing} * 2 + 11px);
     }

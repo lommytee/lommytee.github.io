@@ -20,94 +20,62 @@ title: Tommy Lee
 </section>
 
 <section class="white-section first-white-section">
-  <h1 class="date">2016</h1>
-  <article>
-    <figure class="mobile-figure">
-      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
-        <%= image_tag 'ropes.jpg' %>
-      <% end %>
-    </figure>
+  <h1 class="date">2017</h1>
+  <%= partial 'white-section-article', locals: {
+    image: 'reel.jpg',
+    title: 'Tommy Lee: Sizzle Reel',
+    role: 'Editor',
+    link: 'https://www.youtube.com/watch?v=YB5wFZWyfjg'
+  } %>
 
-    <section class="white-section__text">
-      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
-        <header>Show Me The Ropes</header>
-      <% end %>
-      <p>Writer // Director // Producer</p>
-    </section>
-
-    <figure class="desktop-figure">
-      <% link_to('https://www.youtube.com/watch?v=Whlr-cST1vw', target: '_blank') do %>
-        <%= image_tag 'ropes.jpg' %>
-      <% end %>
-    </figure>
-  </article>
+  <%= partial 'white-section-article', locals: {
+    image: 'prediction-prophet.jpg',
+    title: 'Prediction Prophet',
+    role: 'Writer // Director // Producer // Editor',
+    link: 'https://www.youtube.com/w:tch?v=OVNr43-DZfQ'
+  } %>
 </section>
 
 <section class="black-section">
-  <h1 class="date">2015</h1>
-  <article>
-    <figure class="mobile-figure">
-      <%= image_tag 'as-i-am.jpg' %>
-    </figure>
-
-    <figure class="desktop-figure">
-      <%= image_tag 'as-i-am.jpg' %>
-    </figure>
-
-    <section class="black-section__text">
-      <header>As I Am</header>
-      <p>Director</p>
-    </section>
-  </article>
+  <h1 class="date">2016</h1>
+  <%= partial 'black-section-article', locals: {
+    image: 'ropes.jpg',
+    title: 'Show Me The Ropes',
+    role: 'Writer // Director // Producer',
+    link: 'https://www.youtube.com/watch?v=Whlr-cST1vw'
+  } %>
 </section>
 
 <section class="white-section">
+  <h1 class="date">2015</h1>
+  <%= partial 'white-section-article', locals: {
+    image: 'as-i-am.jpg',
+    title: 'As I Am',
+    role: 'Director',
+    link: '#'
+  } %>
+</section>
+
+<section class="black-section">
   <h1 class="date">2014</h1>
-  <article>
-    <figure class="mobile-figure">
-      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
-        <%= image_tag 'skipping-stone.jpg' %>
-      <% end %>
-    </figure>
-
-    <section class="white-section__text">
-      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
-        <header>Skipping Stone</header>
-      <% end %>
-      <small>Co-writer, Director and Editor // Producer</small>
-    </section>
-
-    <figure class="desktop-figure">
-      <% link_to('https://www.youtube.com/watch?v=l2rmfhdKdxo', target: '_blank') do %>
-        <%= image_tag 'skipping-stone.jpg' %>
-      <% end %>
-    </figure>
-  </article>
+  <%= partial 'black-section-article', locals: {
+    image: 'skipping-stone.jpg',
+    title: 'Skipping Stone',
+    role: 'Co-writer, Director and Editor // Producer',
+    link: 'https://www.youtube.com/watch?v=l2rmfhdKdxo'
+  } %>
 </section>
 
 
-<section class="black-section last-black-section">
+<section class="white-section last-section">
   <h1 class="date">2013</h1>
-  <article>
-    <figure class="desktop-figure">
-      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c', target: '_blank') do %>
-        <%= image_tag 'renmimbi.png' %>
-      <% end %>
-    </figure>
-
-    <figure class="mobile-figure">
-      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c', target: '_blank') do %>
-        <%= image_tag 'renmimbi.png' %>
-      <% end %>
-    </figure>
-
-    <section class="black-section__text">
-      <% link_to('https://www.youtube.com/watch?v=mSJa0ZGaL8c', target: '_blank') do %>
-        <header>Renminbi Tips</header>
-      <% end %>
-      <p>Writer // Director</p>
-    </section>
-  </article>
+  <%= partial 'white-section-article', locals: {
+    image: 'renmimbi.png',
+    title: 'Renminbi Tips',
+    role: 'Writer // Director',
+    link: 'https://www.youtube.com/watch?v=mSJa0ZGaL8c'
+  } %>
 </section>
+
 <%= partial 'footer-white' %>
 </div>
