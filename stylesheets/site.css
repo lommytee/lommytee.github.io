@@ -363,7 +363,8 @@ section.first-white-section {
     section.black-section article figure,
     section.first-white-section article figure {
       z-index: 999999;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       section.white-section article figure img,
       section.black-section article figure img,
       section.first-white-section article figure img {
