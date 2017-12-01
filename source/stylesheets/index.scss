@@ -102,7 +102,7 @@ section.hero-display {
     height: $hero-view-height;
     background-color: transparent;
 
-    video, img {
+    video#hero-video, img {
       position: absolute;
       z-index: 999;
       max-width: 999%;
@@ -549,6 +549,10 @@ section.video-show {
       bottom: 72px;
     }
   }
+}
+
+section.hero-display--video {
+  @extend .hero-display;
 }
 
 section.video-description {
