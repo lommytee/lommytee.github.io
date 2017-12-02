@@ -253,6 +253,10 @@ nav {
     text-decoration: none;
     font-size: 1.5em;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.8); }
+    nav a:hover {
+      color: orange; }
+    nav a:focus {
+      outline: 0; }
   nav a.active {
     border-bottom: 3px solid orange; }
   @media only screen and (min-width: 700px) {
@@ -372,10 +376,14 @@ section.first-white-section {
       section.first-white-section article figure img {
         max-width: 9999%;
         height: 200px; }
-        section.white-section article figure img:hover,
-        section.black-section article figure img:hover,
-        section.first-white-section article figure img:hover {
-          opacity: 0.8; }
+    section.white-section article:hover figure img,
+    section.black-section article:hover figure img,
+    section.first-white-section article:hover figure img {
+      opacity: 0.8; }
+    section.white-section article:hover header,
+    section.black-section article:hover header,
+    section.first-white-section article:hover header {
+      color: orange; }
     section.white-section article section,
     section.black-section article section,
     section.first-white-section article section {
@@ -405,11 +413,20 @@ section.first-white-section {
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: bold;
-        margin-bottom: 1em; }
-        section.white-section article section header:hover,
-        section.black-section article section header:hover,
-        section.first-white-section article section header:hover {
-          color: orange; }
+        margin-bottom: 1em;
+        text-align: center; }
+        section.white-section article section header span.line-break,
+        section.black-section article section header span.line-break,
+        section.first-white-section article section header span.line-break {
+          display: block; }
+      section.white-section article section small,
+      section.black-section article section small,
+      section.first-white-section article section small {
+        text-align: center; }
+        section.white-section article section small span.line-break,
+        section.black-section article section small span.line-break,
+        section.first-white-section article section small span.line-break {
+          display: block; }
   section.white-section div.awards,
   section.black-section div.awards,
   section.first-white-section div.awards {
@@ -476,6 +493,12 @@ section.first-white-section {
         width: calc(50% - 30px);
         float: left;
         margin-left: 20px; }
+        section.white-section article section header span.line-break, section.white-section article section small span.line-break,
+        section.black-section article section header span.line-break,
+        section.black-section article section small span.line-break,
+        section.first-white-section article section header span.line-break,
+        section.first-white-section article section small span.line-break {
+          display: inline; }
       section.white-section article figure,
       section.black-section article figure,
       section.first-white-section article figure {
@@ -540,12 +563,13 @@ section.white-section {
       background-color: orange;
       top: -119.43196px; } }
 
-section.last-section:after {
-  height: 403px; }
+@media only screen and (min-width: 700px) {
+  section.last-section:after {
+    height: 403px; } }
 
 section.first-white-section {
   padding: 12.18693vw 1.5em;
-  padding-top: 0;
+  padding-top: 4.5em;
   background-color: white; }
   section.first-white-section h1.date {
     top: -1.5em;
@@ -564,11 +588,16 @@ section.first-white-section {
     margin-left: -100vw;
     top: -12.18693vw; }
   @media only screen and (min-width: 700px) {
-    section.first-white-section:after {
-      background-color: orange;
-      top: calc(1.5em * 2 + 11px); }
-    section.first-white-section h1.date {
-      top: -4.5em; } }
+    section.first-white-section {
+      padding-top: 0; }
+      section.first-white-section article figure {
+        position: relative;
+        top: -1px; }
+      section.first-white-section:after {
+        background-color: orange;
+        top: calc(1.5em * 2 + 11px); }
+      section.first-white-section h1.date {
+        top: -4.5em; } }
 
 section.black-section {
   background-color: #181818;
@@ -630,6 +659,10 @@ footer {
     display: block; }
   footer a {
     color: white; }
+  footer h1 {
+    font-weight: 100;
+    font-size: 42px;
+    margin-bottom: 21px; }
   footer section.footer-links {
     width: calc(100% - 40px);
     float: left;
@@ -665,8 +698,10 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    footer section.footer-contact ul li strong {
-      margin-right: 0.5em; }
+    footer section.footer-contact ul li {
+      font-size: 15px; }
+      footer section.footer-contact ul li strong {
+        margin-right: 0.5em; }
 
 footer.white {
   color: black !important;
@@ -678,7 +713,7 @@ section.video-show {
   position: relative;
   padding: 12.18693vw 1.5em;
   padding-bottom: 1em;
-  padding-top: 0;
+  padding-top: 4.5em;
   margin-bottom: 4.5em;
   background-color: white;
   display: -webkit-box;
@@ -721,7 +756,18 @@ section.video-show {
       padding: 1.5em; }
   section.video-show figure {
     z-index: 9999;
-    position: relative; }
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0; }
+    section.video-show figure object, section.video-show figure iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100%; }
   section.video-show:before {
     content: "";
     background: white;
@@ -744,6 +790,9 @@ section.video-show {
       padding-bottom: 0;
       bottom: 72px; } }
 
+section.hero-display--video figure header {
+  line-height: 1.5; }
+
 section.video-description {
   padding: 1.5em;
   max-width: 700px;
@@ -753,6 +802,33 @@ section.video-description {
     font-size: 1.5em;
     line-spacing: 2em;
     font-weight: light; }
+
+section.about-reel {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  background-color: #181818; }
+  section.about-reel:before {
+    content: none; }
+
+.scroll-top {
+  margin-top: 1.5em;
+  cursor: pointer; }
 
 nav.about-nav {
   position: relative;
@@ -802,7 +878,7 @@ section.hero-image {
       padding-left: 1.5em;
       height: 400px; }
       section.hero-image figure img {
-        top: -10em;
+        top: -4em;
         position: absolute; }
     section.hero-image p {
       position: absolute;
@@ -846,7 +922,7 @@ section.about-section {
       border-right: 10px solid orange;
       padding-right: 1.5em; }
       section.about-section section.bio p {
-        font-size: 1.5em; } }
+        font-size: 1.25em; } }
 
 div.container {
   max-width: 960px;

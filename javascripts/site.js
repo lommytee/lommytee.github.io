@@ -3,8 +3,11 @@
  $(document).ready(function() {
 
   $('.scroll').click(function (){
-    console.log('swag');
-    $(document).scrollTo('#video', 1000);
+    $(document).scrollTo('#video', 300);
   });
+
+   $('.scroll-top').click(function () {
+     $(document).scrollTo('#navigation', 300);
+   });
 });
 
