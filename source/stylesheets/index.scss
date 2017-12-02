@@ -579,3 +579,14 @@ section.video-description {
     font-weight: light;
   }
 }
+
+section.about-reel {
+  @include grid-column(12);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: $base-spacing * 2;
+  margin-bottom: $base-spacing;
+}
+
