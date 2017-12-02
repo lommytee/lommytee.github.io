@@ -220,6 +220,18 @@ section.first-white-section {
         letter-spacing: 3px;
         font-weight: bold;
         margin-bottom: 1em;
+        text-align: center;
+
+        span.line-break {
+          display: block;
+        }
+      }
+
+      small {
+        text-align: center;
+        span.line-break {
+          display: block;
+        }
       }
     }
   }
@@ -266,6 +278,11 @@ section.first-white-section {
       flex-flow: row nowrap;
       section {
         @include grid-column(6);
+        header, small {
+          span.line-break {
+            display: inline;
+          }
+        }
       }
 
       figure {
@@ -353,15 +370,16 @@ section.white-section {
 }
 
 section.last-section {
-
-  &:after {
-    height: 403px;
+  @include grid-media($large-grid) {
+    &:after {
+      height: 403px;
+    }
   }
 }
 
 section.first-white-section {
   padding: (sin($angle-degree) * 100vw) $section-padding;
-  padding-top: 0;
+  padding-top: $base-spacing * 3;
   background-color: white;
 
   h1.date {
@@ -384,6 +402,8 @@ section.first-white-section {
   }
 
   @include grid-media($large-grid) {
+    padding-top: 0;
+
     article {
       figure {
         position: relative;
@@ -532,7 +552,7 @@ section.video-show {
   position: relative;
   padding: (sin($angle-degree) * 100vw) $section-padding;
   padding-bottom: 1em;
-  padding-top: 0;
+  padding-top: $base-spacing * 3;
   margin-bottom: $base-spacing * 3;
   background-color: white;
   display: flex;
@@ -559,6 +579,19 @@ section.video-show {
   figure {
     z-index: 9999;
     position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    object, iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100%;
+    }
   }
 
 
@@ -587,6 +620,12 @@ section.video-show {
 
 section.hero-display--video {
   @extend .hero-display;
+
+  figure {
+    header {
+      line-height: 1.5;
+    }
+  }
 }
 
 section.video-description {
