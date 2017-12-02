@@ -468,6 +468,12 @@ footer {
     color: white;
   }
 
+  h1 {
+    font-weight: 100;
+    font-size: 42px;
+    margin-bottom: 21px;
+  }
+
   section.footer-links {
     @include grid-column(12);
     display: flex;
@@ -486,6 +492,7 @@ footer {
 
     ul {
       li {
+        font-size: 15px;
         strong {
           margin-right: 0.5em;
         }
@@ -592,5 +599,6 @@ section.about-reel {
 
 
 .scroll-top {
+  margin-top: $base-spacing;
   cursor: pointer;
 }
