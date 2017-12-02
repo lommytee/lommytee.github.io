@@ -178,9 +178,18 @@ section.first-white-section {
         max-width: 9999%;
         height: 200px;
 
-        &:hover {
+      }
+    }
+
+    &:hover {
+      figure {
+        img {
           opacity: 0.8;
         }
+      }
+
+      header {
+        color: orange;
       }
     }
 
@@ -203,10 +212,6 @@ section.first-white-section {
         letter-spacing: 3px;
         font-weight: bold;
         margin-bottom: 1em;
-
-        &:hover {
-          color: orange;
-        }
       }
     }
   }
