@@ -376,6 +376,13 @@ section.first-white-section {
   }
 
   @include grid-media($large-grid) {
+    article {
+      figure {
+        position: relative;
+        top: -1px;
+      }
+    }
+
     &:after {
       background-color: orange;
       top: calc(#{$base-spacing} * 2 + 11px);
