@@ -649,6 +649,11 @@ section.about-reel {
   align-items: center;
   margin-top: $base-spacing * 2;
   margin-bottom: $base-spacing;
+  background-color: #181818;
+
+  &:before {
+    content: none;
+  }
 }
 
 
