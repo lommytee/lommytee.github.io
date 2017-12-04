@@ -297,6 +297,7 @@ section.hero-display, section.hero-display--video {
       min-width: 100vw;
       height: 125vh; }
     section.hero-display figure header, section.hero-display--video figure header {
+      padding: 0.75em;
       text-align: center;
       font-size: 4em;
       color: white;
@@ -816,6 +817,8 @@ section.video-show {
 section.hero-display--video figure header {
   line-height: 1.5;
   font-size: 3em; }
+  section.hero-display--video figure header span.line-break {
+    display: block; }
 @media only screen and (min-width: 700px) {
   section.hero-display--video figure header {
     font-size: 64px; } }
