@@ -119,6 +119,7 @@ section.hero-display {
     }
 
     header {
+      padding: $small-spacing;
       text-align: center;
       font-size: 4em;
       color: white;
@@ -656,6 +657,9 @@ section.hero-display--video {
     header {
       line-height: 1.5;
       font-size: 3em;
+      span.line-break {
+        display: block;
+      }
     }
   }
 
