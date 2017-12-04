@@ -126,6 +126,7 @@ section.hero-display {
       z-index: 9999;
       text-transform: uppercase;
       margin-bottom: $hero-view-height - 100vh;
+      margin-top: $base-spacing;
       text-shadow:
       0 1px 3px darken(rgba(black, 0.4),18%),
       0 1px 2px darken(rgba(black, 0.6),25%);
@@ -138,6 +139,14 @@ section.hero-display {
       }
     }
 
+  }
+
+  @include grid-media($large-grid) {
+    figure {
+      header {
+        margin-top: 0;
+      }
+    }
   }
 }
 
@@ -171,6 +180,10 @@ section.first-white-section {
 
     figure.mobile-figure {
       display: block;
+
+      img {
+        width: 100%;
+      }
     }
 
     figure.desktop-figure {
@@ -182,10 +195,15 @@ section.first-white-section {
       overflow: hidden;
       position: relative;
 
+      a {
+        display: block;
+        width: 300px;
+      }
+
       img {
         max-width: 9999%;
-        height: 200px;
-
+        width: 100%;
+        height: auto;
       }
     }
 
@@ -231,6 +249,16 @@ section.first-white-section {
         text-align: center;
         span.line-break {
           display: block;
+        }
+      }
+    }
+
+    @include grid-media($large-grid) {
+      figure {
+        a {
+          img {
+            height: 200px;
+          }
         }
       }
     }
@@ -295,6 +323,9 @@ section.first-white-section {
 
       figure.desktop-figure {
         display: block;
+        a {
+          width: 355px;
+        }
       }
     }
   }
@@ -479,7 +510,7 @@ section.black-section {
       }
 
       figure {
-        img {
+        a {
           float: right;
         }
       }
@@ -624,6 +655,15 @@ section.hero-display--video {
   figure {
     header {
       line-height: 1.5;
+      font-size: 3em;
+    }
+  }
+
+  @include grid-media($large-grid) {
+    figure {
+      header {
+        font-size: 64px;
+      }
     }
   }
 }
