@@ -304,12 +304,16 @@ section.hero-display, section.hero-display--video {
       z-index: 9999;
       text-transform: uppercase;
       margin-bottom: 25vh;
+      margin-top: 1.5em;
       text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.6);
       line-height: 0.88; }
       section.hero-display figure header small, section.hero-display--video figure header small {
         color: white;
         z-index: 9999;
         font-size: 0.33em; }
+  @media only screen and (min-width: 700px) {
+    section.hero-display figure header, section.hero-display--video figure header {
+      margin-top: 0; } }
 
 section.white-section,
 section.black-section,
@@ -361,6 +365,10 @@ section.first-white-section {
     section.black-section article figure.mobile-figure,
     section.first-white-section article figure.mobile-figure {
       display: block; }
+      section.white-section article figure.mobile-figure img,
+      section.black-section article figure.mobile-figure img,
+      section.first-white-section article figure.mobile-figure img {
+        width: 100%; }
     section.white-section article figure.desktop-figure,
     section.black-section article figure.desktop-figure,
     section.first-white-section article figure.desktop-figure {
@@ -371,11 +379,17 @@ section.first-white-section {
       z-index: 999999;
       overflow: hidden;
       position: relative; }
+      section.white-section article figure a,
+      section.black-section article figure a,
+      section.first-white-section article figure a {
+        display: block;
+        width: 300px; }
       section.white-section article figure img,
       section.black-section article figure img,
       section.first-white-section article figure img {
         max-width: 9999%;
-        height: 200px; }
+        width: 100%;
+        height: auto; }
     section.white-section article:hover figure img,
     section.black-section article:hover figure img,
     section.first-white-section article:hover figure img {
@@ -427,6 +441,11 @@ section.first-white-section {
         section.black-section article section small span.line-break,
         section.first-white-section article section small span.line-break {
           display: block; }
+    @media only screen and (min-width: 700px) {
+      section.white-section article figure a img,
+      section.black-section article figure a img,
+      section.first-white-section article figure a img {
+        height: 200px; } }
   section.white-section div.awards,
   section.black-section div.awards,
   section.first-white-section div.awards {
@@ -512,7 +531,11 @@ section.first-white-section {
       section.white-section article figure.desktop-figure,
       section.black-section article figure.desktop-figure,
       section.first-white-section article figure.desktop-figure {
-        display: block; } }
+        display: block; }
+        section.white-section article figure.desktop-figure a,
+        section.black-section article figure.desktop-figure a,
+        section.first-white-section article figure.desktop-figure a {
+          width: 355px; } }
 
 section.white-section {
   padding: 1.5em;
@@ -640,7 +663,7 @@ section.black-section {
   @media only screen and (min-width: 700px) {
     section.black-section article section.black-section__text {
       text-align: left; }
-    section.black-section article figure img {
+    section.black-section article figure a {
       float: right; }
     section.black-section:after {
       top: 0;
@@ -791,7 +814,11 @@ section.video-show {
       bottom: 72px; } }
 
 section.hero-display--video figure header {
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 3em; }
+@media only screen and (min-width: 700px) {
+  section.hero-display--video figure header {
+    font-size: 64px; } }
 
 section.video-description {
   padding: 1.5em;
