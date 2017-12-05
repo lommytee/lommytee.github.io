@@ -101,6 +101,15 @@ section.about-section {
 
     p {
       line-height: 2;
+
+      a {
+        color: orange;
+        text-decoration: none;
+
+        &:hover {
+          color: lighten(orange, 20);
+        }
+      }
     }
   }
 
