@@ -947,6 +947,11 @@ section.about-section {
       color: orange; }
     section.about-section section.bio p {
       line-height: 2; }
+      section.about-section section.bio p a {
+        color: orange;
+        text-decoration: none; }
+        section.about-section section.bio p a:hover {
+          color: #ffc966; }
   @media only screen and (min-width: 700px) {
     section.about-section section.bio {
       border-right: 10px solid orange;
