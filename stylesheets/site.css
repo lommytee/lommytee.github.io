@@ -395,9 +395,11 @@ section.first-white-section {
     section.black-section article:hover figure img,
     section.first-white-section article:hover figure img {
       opacity: 0.8; }
-    section.white-section article:hover header,
+    section.white-section article:hover header, section.white-section article:hover small.category,
     section.black-section article:hover header,
-    section.first-white-section article:hover header {
+    section.black-section article:hover small.category,
+    section.first-white-section article:hover header,
+    section.first-white-section article:hover small.category {
       color: orange; }
     section.white-section article section,
     section.black-section article section,
@@ -428,7 +430,7 @@ section.first-white-section {
         text-transform: uppercase;
         letter-spacing: 3px;
         font-weight: bold;
-        margin-bottom: 1em;
+        margin-bottom: 0.375em;
         text-align: center; }
         section.white-section article section header span.line-break,
         section.black-section article section header span.line-break,
@@ -438,7 +440,6 @@ section.first-white-section {
       section.black-section article section small.category,
       section.first-white-section article section small.category {
         font-size: 0.85em;
-        color: orange;
         margin-bottom: 1.5em; }
       section.white-section article section small,
       section.black-section article section small,
