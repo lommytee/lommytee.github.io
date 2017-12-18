@@ -434,6 +434,12 @@ section.first-white-section {
         section.black-section article section header span.line-break,
         section.first-white-section article section header span.line-break {
           display: block; }
+      section.white-section article section small.category,
+      section.black-section article section small.category,
+      section.first-white-section article section small.category {
+        font-size: 0.85em;
+        color: orange;
+        margin-bottom: 1.5em; }
       section.white-section article section small,
       section.black-section article section small,
       section.first-white-section article section small {
@@ -703,7 +709,12 @@ footer {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-top: 1.5em; }
+    footer section.footer-links span.orange {
+      color: orange; }
+    footer section.footer-links:hover, footer section.footer-links:focus {
+      color: orange; }
   footer section.footer-contact {
     margin-top: 3em;
     width: calc(100% - 40px);
@@ -859,6 +870,24 @@ section.about-reel {
 .scroll-top {
   margin-top: 1.5em;
   cursor: pointer; }
+
+div.scroll-down {
+  position: absolute;
+  top: 75%;
+  z-index: 999;
+  left: 50%;
+  right: 50%;
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media only screen and (min-width: 700px) {
+    div.scroll-down {
+      top: 50%; } }
 
 nav.about-nav {
   position: relative;
