@@ -246,6 +246,12 @@ section.first-white-section {
         }
       }
 
+      small.category {
+        font-size: 0.85em;
+        color: orange;
+        margin-bottom: $base-spacing;
+      }
+
       small {
         text-align: center;
         span.line-break {
@@ -547,6 +553,15 @@ footer {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    margin-top: $base-spacing;
+
+    span.orange {
+      color: orange;
+    }
+
+    &:hover, &:focus {
+      color: orange;
+    }
   }
 
   section.footer-contact {
@@ -705,3 +720,23 @@ section.about-reel {
   margin-top: $base-spacing;
   cursor: pointer;
 }
+
+div.scroll-down {
+  position: absolute;
+  top: 75%;
+  z-index: 999;
+  left: 50%;
+  right: 50%;
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+
+  @include grid-media($large-grid) {
+    top: 50%;
+  }
+}
+
+
