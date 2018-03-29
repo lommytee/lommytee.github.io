@@ -1,0 +1,59 @@
+{
+  "2017": [
+    {
+      "image": "reel-small.jpg",
+      "title": "Tommy Lee: <span class='line-break'>Sizzle Reel</span>",
+      "category": "Montage",
+      "role": "Writer // Director",
+      "link": "sizzle-reel.html"
+    },
+
+    {
+      "image": "prediction-prophet-small.jpg",
+      "title": "Prediction Prophet",
+      "category": "Sketch",
+      "role": "Writer // Director <span class='line-break'>// Producer // Editor</span>",
+      "link": "prediction-prophet.html"
+    }
+  ],
+
+  "2016": [
+    {
+      "image": "ropes-small.jpg",
+      "title": "Show Me The Ropes",
+      "category": "Music Video",
+      "role": "Writer // Director // Producer",
+      "link": "show-me-the-ropes.html"
+    }
+  ],
+
+  "2015": [
+    {
+      "image": "as-i-am-small.jpg",
+      "title": "As I Am",
+      "category": "Short",
+      "role": "Director",
+      "link": "as-i-am.html"
+    }
+  ],
+
+  "2014": [
+    {
+      "image": "skipping-stone-small.jpg",
+      "title": "Skipping Stone",
+      "category": "Music Video",
+      "role": "Co-writer, Director and Editor <span class='line-break'>// Producer</span>",
+      "link": "skipping-stone.html"
+    }
+  ],
+
+  "2013": [
+    {
+      "image": "renminbi-small.jpg",
+      "title": "Renminbi Tips",
+      "category": "Music Video",
+      "role": "Writer // Director",
+      "link": "renminbi-tips.html"
+    }
+  ]
+}
