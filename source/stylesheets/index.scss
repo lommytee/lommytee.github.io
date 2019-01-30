@@ -301,10 +301,9 @@ section.first-white-section {
       content: '';
       position: absolute;
       background-color: red;
-      height: (sin($angle-degree) * 980px) + 230px;
+      height: 150%;
       width: 10px;
       z-index: 999;
-      height: 360px * 2;
       left: 50%;
     }
 
@@ -340,6 +339,10 @@ section.first-white-section {
 section.white-section {
   padding: $section-padding;
   background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 
   h1.date {
     right: $base-spacing;
