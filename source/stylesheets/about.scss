@@ -83,6 +83,21 @@ section.hero-image {
   }
 }
 
+section.bio-examples {
+  margin: ($base-spacing * 2) 0;
+
+  iframe {
+    max-width: 100%;
+    margin: $small-spacing 0;
+  }
+
+  @include grid-media($large-grid) {
+    iframe {
+      margin: $small-spacing;
+    }
+  }
+}
+
 section.about-section {
   @include grid-column(12);
   position: relative;
@@ -117,6 +132,18 @@ section.about-section {
     section.bio {
       border-right: 10px solid orange;
       padding-right: $base-spacing;
+
+      section.bio-examples {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+
+        iframe {
+          flex: 1;
+        }
+      }
 
       p {
         font-size: 1.25em;

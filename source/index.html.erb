@@ -22,7 +22,7 @@ title: Tommy Lee
 </section>
 
 <% data.dates.each_with_index do |date, index| %>
-  <% if date[0].to_i.odd? %>
+  <% if date[0].to_i.even? %>
     <% if index == 0 %>
       <section class="white-section first-white-section">
     <% elsif index == (data.dates.length - 1) %>

@@ -1,4 +1,20 @@
 {
+  "2018": [
+    {
+      "image": "just-run.jpg",
+      "title": "Just Run",
+      "category": "Derek Sivers on Successful Simplicity",
+      "role": "Director",
+      "link": "just-run.html"
+    },
+    {
+      "image": "busy-is-a-decision.jpg",
+      "title": "Busy is a Decision",
+      "category": "Debbie Millman on Life Priorities",
+      "role": "Director",
+      "link": "busy-is-a-decision.html"
+    }
+  ],
   "2017": [
     {
       "image": "reel-small.jpg",
@@ -16,7 +32,6 @@
       "link": "prediction-prophet.html"
     }
   ],
-
   "2016": [
     {
       "image": "ropes-small.jpg",
