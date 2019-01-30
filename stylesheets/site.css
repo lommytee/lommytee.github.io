@@ -959,6 +959,15 @@ section.hero-image {
       margin-left: -100vw;
       bottom: -5.48412vw; } }
 
+section.bio-examples {
+  margin: 3em 0; }
+  section.bio-examples iframe {
+    max-width: 100%;
+    margin: 0.75em 0; }
+  @media only screen and (min-width: 700px) {
+    section.bio-examples iframe {
+      margin: 0.75em; } }
+
 section.about-section {
   width: calc(100% - 40px);
   float: left;
@@ -986,6 +995,25 @@ section.about-section {
     section.about-section section.bio {
       border-right: 10px solid orange;
       padding-right: 1.5em; }
+      section.about-section section.bio section.bio-examples {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        section.about-section section.bio section.bio-examples iframe {
+          -webkit-box-flex: 1;
+              -ms-flex: 1;
+                  flex: 1; }
       section.about-section section.bio p {
         font-size: 1.25em; } }
 
