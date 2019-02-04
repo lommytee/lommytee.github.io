@@ -1,0 +1,9 @@
+<nav id="navigation">
+  <% if locals.fetch(:active, nil) == 'contact' %>
+    <%= link_to 'Work', 'index' %>
+    <%= link_to 'Contact', 'contact', class: 'active' %>
+  <% else %>
+    <%= link_to 'Work', 'index', class: 'active' %>
+    <%= link_to 'Contact', 'contact' %>
+  <% end %>
+</nav>

@@ -1,15 +1,17 @@
-nav.about-nav {
-  position: relative;
-  margin-bottom: $base-spacing;
-  margin-right: $base-spacing;
-}
 
-div.about-container {
+div.contact-container {
   background-color: #181818;
   display: block;
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden;
+
+  nav {
+    position: relative;
+    margin-bottom: $base-spacing;
+    margin-right: $base-spacing;
+  }
+
 }
 
 section.hero-image {

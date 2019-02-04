@@ -15,9 +15,11 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <div class="container">
-      <%= partial 'navigation' %>
-      <%= yield %>
+    <div class="contact-container">
+      <div class="container">
+        <%= partial 'navigation', locals: { active: 'contact' } %>
+        <%= yield %>
+      </div>
     </div>
   </body>
 </html>
