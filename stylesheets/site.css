@@ -902,17 +902,16 @@ div.scroll-down {
     div.scroll-down {
       top: 50%; } }
 
-nav.about-nav {
-  position: relative;
-  margin-bottom: 1.5em;
-  margin-right: 1.5em; }
-
-div.about-container {
+div.contact-container {
   background-color: #181818;
   display: block;
   min-height: 100vh;
   min-width: 100vw;
   overflow-x: hidden; }
+  div.contact-container nav {
+    position: relative;
+    margin-bottom: 1.5em;
+    margin-right: 1.5em; }
 
 section.hero-image {
   width: calc(100% - 40px);
