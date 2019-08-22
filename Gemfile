@@ -10,7 +10,6 @@ gem "bitters", '1.7.0'
 gem "neat"
 gem "middleman-gh-pages"
 
-
 gem "jquery-middleman"
 gem 'middleman-sprockets', '4.0.0'
 source 'https://rails-assets.org' do

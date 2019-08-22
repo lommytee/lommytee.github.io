@@ -1,4 +1,13 @@
 {
+  "2019": [
+    {
+      "image": "love-again.jpg",
+      "title": "Love Again",
+      "category": "Music Video",
+      "role": "Producer // Co-Writer + Editor",
+      "link": "love-again.html"
+    }
+  ],
   "2018": [
     {
       "image": "just-run.jpg",
@@ -57,7 +66,7 @@
       "image": "skipping-stone-small.jpg",
       "title": "Skipping Stone",
       "category": "Music Video",
-      "role": "Co-writer, Director and Editor <span class='line-break'>// Producer</span>",
+      "role": "Co-writer, Director + Editor <span class='line-break'>// Producer</span>",
       "link": "skipping-stone.html"
     }
   ],
