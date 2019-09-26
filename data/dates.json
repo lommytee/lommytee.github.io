@@ -1,11 +1,39 @@
 {
   "2019": [
     {
+      "image": "podolsky-v1.jpg",
+      "title": "Dirt Rich",
+      "category": "Commercial",
+      "role": "Creator",
+      "link": "dirt-rich.html"
+    },
+    {
+      "image": "podolsky-v2.jpg",
+      "title": "Solo Economic Dependency",
+      "category": "Commercial",
+      "role": "Creator",
+      "link": "solo-economic-dependency.html"
+    },
+    {
+      "image": "podolsky-v3.jpg",
+      "title": "Dirt to Purpose",
+      "category": "Commercial",
+      "role": "Creator",
+      "link": "dirt-to-purpose.html"
+    },
+    {
       "image": "love-again.jpg",
       "title": "Love Again",
       "category": "Music Video",
       "role": "Producer // Co-Writer + Editor",
       "link": "love-again.html"
+    },
+    {
+      "image": "i-wash-dish.jpg",
+      "title": "I Wash...Dish",
+      "category": "Sketch",
+      "role": "Co-Writer",
+      "link": "i-wash-dish.html"
     }
   ],
   "2018": [
