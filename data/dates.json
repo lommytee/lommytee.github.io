@@ -41,14 +41,14 @@
       "image": "just-run.jpg",
       "title": "Just Run",
       "category": "Derek Sivers on Successful Simplicity",
-      "role": "Director",
+      "role": "Creator",
       "link": "just-run.html"
     },
     {
       "image": "busy-is-a-decision.jpg",
       "title": "Busy is a Decision",
       "category": "Debbie Millman on Life Priorities",
-      "role": "Director",
+      "role": "Creator",
       "link": "busy-is-a-decision.html"
     }
   ],
@@ -65,7 +65,7 @@
       "image": "prediction-prophet-small.jpg",
       "title": "Prediction Prophet",
       "category": "Sketch",
-      "role": "Writer // Director <span class='line-break'>// Producer // Editor</span>",
+      "role": "Creator",
       "link": "prediction-prophet.html"
     }
   ],
