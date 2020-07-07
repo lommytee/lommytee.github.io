@@ -1,168 +1,322 @@
-/*
-Error: Undefined variable: "$base-spacing".
-        on line 11 of /Users/nolantait/lommytee.github.io/source/stylesheets/about.scss
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-enable */
+button, [type='button'], [type='reset'], [type='submit'] {
+  appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
+    background-color: #11519a;
+    color: #fff; }
+  button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
+    outline: 3px solid rgba(21, 101, 192, 0.6);
+    outline-offset: 2px; }
+  button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
+      background-color: #1565c0; }
 
-6:   min-width: 100vw;
-7:   overflow-x: hidden;
-8: 
-9:   nav {
-10:     position: relative;
-11:     margin-bottom: $base-spacing;
-12:     margin-right: $base-spacing;
-13:   }
-14: 
-15: }
-16: 
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0; }
 
-Backtrace:
-/Users/nolantait/lommytee.github.io/source/stylesheets/about.scss:11
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/renderers/sass.rb:68:in `evaluate'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/tilt-2.0.8/lib/tilt/template.rb:109:in `render'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/file_renderer.rb:79:in `render'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:184:in `_render_with_all_renderers'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:147:in `block in render'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/template_renderer.rb:146:in `render'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/sitemap/resource.rb:154:in `render'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:112:in `process_request'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:66:in `block in call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `catch'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/rack.rb:65:in `call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/urlmap.rb:68:in `block in call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/urlmap.rb:53:in `each'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/urlmap.rb:53:in `call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-autoprefixer-2.9.0/lib/middleman-autoprefixer/extension.rb:48:in `call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/head.rb:12:in `call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/lint.rb:49:in `_call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/lint.rb:37:in `call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/builder.rb:153:in `call'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/mock.rb:74:in `request'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/rack-2.0.4/lib/rack/mock.rb:56:in `get'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:232:in `block in output_resource'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:225:in `output_resource'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:484:in `call_with_index'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:455:in `process_incoming_jobs'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:437:in `block in worker'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:428:in `fork'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:428:in `worker'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:419:in `block in create_workers'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `each'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `each_with_index'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:418:in `create_workers'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:358:in `work_in_processes'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/parallel-1.12.1/lib/parallel.rb:264:in `map'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:137:in `output_resources'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:131:in `output_files'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:71:in `block in run!'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/builder.rb:70:in `run!'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_reference.rb:43:in `send_to'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/call_with.rb:76:in `call_with'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/contracts-0.13.0/lib/contracts/method_handler.rb:138:in `block in redefine_method'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:80:in `block in build'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/activesupport-5.0.6/lib/active_support/notifications.rb:166:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-core-4.2.1/lib/middleman-core/util.rb:21:in `instrument'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-cli-4.2.1/lib/middleman-cli/build.rb:79:in `build'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `block in invoke_all'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `each'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `map'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/invocation.rb:133:in `invoke_all'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/group.rb:232:in `dispatch'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/invocation.rb:115:in `invoke'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor.rb:40:in `block in register'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/command.rb:27:in `run'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/invocation.rb:126:in `invoke_command'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor.rb:387:in `dispatch'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/thor-0.20.0/lib/thor/base.rb:466:in `start'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/middleman-cli-4.2.1/bin/middleman:70:in `<top (required)>'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/bin/middleman:23:in `load'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/bin/middleman:23:in `<top (required)>'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/cli/exec.rb:74:in `load'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/cli/exec.rb:74:in `kernel_load'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/cli/exec.rb:28:in `run'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/cli.rb:463:in `exec'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/vendor/thor/lib/thor.rb:387:in `dispatch'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/cli.rb:27:in `dispatch'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/vendor/thor/lib/thor/base.rb:466:in `start'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/cli.rb:18:in `start'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/bundler-1.17.2/exe/bundle:30:in `block in <top (required)>'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/2.6.0/bundler/friendly_errors.rb:124:in `with_friendly_errors'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/lib/ruby/gems/2.6.0/gems/bundler-1.17.2/exe/bundle:22:in `<top (required)>'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/bin/bundle:23:in `load'
-/Users/nolantait/.asdf/installs/ruby/2.6.2/bin/bundle:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$base-spacing\".\A         on line 11 of /Users/nolantait/lommytee.github.io/source/stylesheets/about.scss\A \A 6:   min-width: 100vw;\A 7:   overflow-x: hidden;\A 8: \A 9:   nav {\A 10:     position: relative;\A 11:     margin-bottom: $base-spacing;\A 12:     margin-right: $base-spacing;\A 13:   }\A 14: \A 15: }\A 16: "; }
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0; }
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em; }
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%; }
+  [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
+    border-color: #b1b1b1; }
+  [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
+    border-color: #1565c0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 101, 192, 0.7);
+    outline: none; }
+  [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
+    background-color: #f2f2f2;
+    cursor: not-allowed; }
+    [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
+      border: 1px solid #ddd; }
+  [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
+    color: #858585; }
+
+textarea {
+  resize: vertical; }
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%; }
+
+select {
+  margin-bottom: 0.75em;
+  width: 100%; }
+
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+[type="file"]:focus,
+select:focus {
+  outline: 3px solid rgba(21, 101, 192, 0.6);
+  outline-offset: 2px; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+  max-width: 100%; }
+
+div.about-container {
+  overflow-x: hidden; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+dl {
+  margin: 0; }
+
+dt {
+  font-weight: 600;
+  margin: 0; }
+
+dd {
+  margin: 0; }
+
+figure {
+  margin: 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+table {
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  table-layout: fixed;
+  text-align: left;
+  width: 100%; }
+
+thead {
+  line-height: 1.2;
+  vertical-align: bottom; }
+
+tbody {
+  vertical-align: top; }
+
+tr {
+  border-bottom: 1px solid #ddd; }
+
+th {
+  font-weight: 600; }
+
+th,
+td {
+  padding: 0.75em 0.75em 0.75em 0; }
+
+html {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #1565c0;
+  text-decoration-skip: ink;
+  transition: color 150ms ease; }
+  a:hover {
+    color: #104c90; }
+  a:focus {
+    outline: 3px solid rgba(21, 101, 192, 0.6);
+    outline-offset: 2px; }
+
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+div.contact-container {
+  background-color: #181818;
+  display: block;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden; }
+  div.contact-container nav {
+    position: relative;
+    margin-bottom: 1.5em;
+    margin-right: 1.5em; }
+
+section.hero-image {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  background-color: #181818;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4.5em; }
+  section.hero-image figure {
+    float: right;
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1em; }
+    section.hero-image figure img {
+      width: 100%;
+      z-index: 1;
+      position: relative;
+      display: block; }
+  section.hero-image p {
+    color: white;
+    z-index: 999999;
+    position: relative;
+    font-size: 2em;
+    text-align: center; }
+    section.hero-image p span {
+      color: orange; }
+  @media only screen and (min-width: 700px) {
+    section.hero-image figure {
+      border-left: 10px solid orange;
+      padding-left: 1.5em;
+      height: 400px; }
+      section.hero-image figure img {
+        top: -4em;
+        position: absolute; }
+    section.hero-image p {
+      position: absolute;
+      bottom: 0;
+      right: 0.75em;
+      text-align: right; }
+    section.hero-image:after {
+      content: "";
+      background: #181818;
+      height: calc(-0.1218693434 * -100vw);
+      transform: skewY(-7deg);
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      margin-right: -100vw;
+      margin-left: -100vw;
+      bottom: -5.4841204532vw; } }
+section.bio-examples {
+  margin: 3em 0; }
+  section.bio-examples iframe {
+    max-width: 100%;
+    margin: 0.75em 0; }
+  @media only screen and (min-width: 700px) {
+    section.bio-examples iframe {
+      margin: 0.75em; } }
+section.about-section {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  z-index: 3; }
+  section.about-section section.bio {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+    color: white;
+    z-index: 99999; }
+    section.about-section section.bio h1 {
+      font-weight: 800;
+      text-transform: uppercase;
+      color: orange; }
+    section.about-section section.bio p {
+      line-height: 2; }
+      section.about-section section.bio p a {
+        color: orange;
+        text-decoration: none; }
+        section.about-section section.bio p a:hover {
+          color: #ffc966; }
+  @media only screen and (min-width: 700px) {
+    section.about-section section.bio {
+      border-right: 10px solid orange;
+      padding-right: 1.5em; }
+      section.about-section section.bio section.bio-examples {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center; }
+        section.about-section section.bio section.bio-examples iframe {
+          flex: 1; }
+      section.about-section section.bio p {
+        font-size: 1.25em; } }
