@@ -9,9 +9,10 @@ gem "bourbon"
 gem "bitters", '1.7.0'
 gem "neat"
 gem "middleman-gh-pages"
+gem 'sassc'
 
+gem "middleman-sprockets", '4.0.0'
 gem "jquery-middleman"
-gem 'middleman-sprockets', '4.0.0'
 source 'https://rails-assets.org' do
   gem 'rails-assets-jquery', '2.1.1'
 end

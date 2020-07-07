@@ -1,3 +1,7 @@
+@import "neat";
+@import "bourbon/bourbon";
+@import "base/base";
+
 $section-padding: $base-spacing;
 $angle-degree: 7deg;
 $hero-view-height: 125vh;
@@ -50,7 +54,6 @@ $hero-view-height: 125vh;
   }
   @return $sin;
 }
-
 
 nav {
   display: flex;
